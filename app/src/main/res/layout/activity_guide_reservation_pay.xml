@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_hundred_thirty"
+        android:layout_marginLeft="@dimen/dp_sixteen"
+        android:layout_marginRight="@dimen/dp_sixteen"
+        android:layout_marginTop="@dimen/dp_twenty"
+        android:background="@drawable/theme_rectangle_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_eighteen"
+            android:layout_marginRight="@dimen/dp_eighteen"
+            android:layout_marginTop="@dimen/dp_twenty_nine">
+
+            <TextView
+                style="@style/txtBlack"
+                android:text="@string/reservationPayWaitePay"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_centerHorizontal="true"
+                android:text="@string/reservationPayWaiteReceive"
+                android:textColor="@color/fcdColor" />
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_alignParentRight="true"
+                android:text="@string/reservationPayWaiteTravel"
+                android:textColor="@color/fcdColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_forty"
+            android:layout_marginRight="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_eleven">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_fenge_yuan_bai" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_one"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:layout_toLeftOf="@+id/img2"
+                android:layout_toRightOf="@+id/img1"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_fenge_xian" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_fenge_yuan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_one"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:layout_toLeftOf="@+id/img3"
+                android:layout_toRightOf="@+id/img2"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_fenge_xian" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_fenge_yuan" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_twenty_four"
+            android:text="@string/reservationPayHint"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_fifty"
+        android:layout_marginRight="@dimen/dp_fifty"
+        android:layout_marginTop="@dimen/dp_sixty"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_sixteen">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_zero_five"
+                android:layout_gravity="center"
+                android:background="@color/colorHint" />
+
+            <TextView
+                style="@style/txtGray"
+                android:layout_gravity="center"
+                android:background="@color/pageBg"
+                android:paddingLeft="@dimen/dp_twenty"
+                android:paddingRight="@dimen/dp_twenty"
+                android:text="@string/oDetailPayWay" />
+
+        </FrameLayout>
+
+        <include layout="@layout/item_pay_choice" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reservationPay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_five"
+        android:layout_marginLeft="@dimen/dp_fifty"
+        android:layout_marginRight="@dimen/dp_fifty"
+        android:background="@drawable/theme_rectangle_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_gravity="center_vertical"
+            android:text="@string/reservationPaySure"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_gravity="center_vertical"
+            android:text="￥400"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</LinearLayout>

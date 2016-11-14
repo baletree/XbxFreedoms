@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popOutside_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_seven"
+        android:paddingTop="@dimen/dp_ten"
+        android:background="@mipmap/popup_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/popupCancel_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/popupOneTxt_tv"
+                style="@style/txtBlack"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorHint"
+                android:text="@string/mainCancelOrder"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/popupService_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero"
+            android:layout_weight="1">
+            <TextView
+                style="@style/txtBlack"
+                android:textColor="@color/colorHint"
+                android:layout_centerInParent="true"
+                android:text="@string/mainService"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

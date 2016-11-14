@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resortsChoiceRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_nine"
+            android:textColor="@color/themeColor"
+            android:text="@string/mainChoiceResorts" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_sixteen"
+            android:paddingRight="@dimen/dp_eight">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_marginTop="@dimen/dp_nine"
+                android:textSize="@dimen/sp_twelve"
+                android:textColor="@color/colorHint"
+                android:text="@string/mainSiChuan" />
+
+            <com.xbx123.freedom.view.views.FlowLayout
+                android:id="@+id/resortsList_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_thirty" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

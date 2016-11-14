@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_sixteen"
+        android:layout_marginRight="@dimen/dp_sixteen">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine" />
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dp_twelve"
+            android:paddingRight="@dimen/dp_twelve"
+            android:text="@string/commentNoName"
+            android:textSize="@dimen/sp_twelve" />
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/commentShow_rtb"
+        style="@style/roomRatingBar_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_twenty"
+        android:layout_marginTop="@dimen/dp_twelve"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0" />
+
+    <com.xbx123.freedom.view.views.FlowLayout
+        android:id="@+id/commentShowTag_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_fifty"
+        android:layout_marginRight="@dimen/dp_thirty_five"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/commentShowMsg_tv"
+        style="@style/txtBlack"
+        android:layout_marginTop="@dimen/dp_six"
+        android:layout_marginLeft="@dimen/dp_fifty"
+        android:layout_marginRight="@dimen/dp_fifty" />
+</LinearLayout>

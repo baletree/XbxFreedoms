@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+    <include layout="@layout/page_title"/>
+    <EditText
+        android:id="@+id/feedBack_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_hundred_fifty"
+        android:layout_marginTop="@dimen/dp_sixteen"
+        android:background="@drawable/border_topbottom_bg"
+        android:padding="@dimen/dp_six"
+        android:hint="@string/feedBackHint"
+        android:textColorHint="@color/colorHint"
+        android:gravity="top"
+        android:maxLength="150"
+        android:textSize="@dimen/sp_twelve"/>
+    <Button
+        android:id="@+id/feedBack_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_eight"
+        android:layout_margin="@dimen/dp_sixteen"
+        android:text="@string/feedBackSub"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_fourteen"
+        android:background="@drawable/theme_rectangle_bg"/>
+</LinearLayout>

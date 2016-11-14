@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <com.xbx123.freedom.view.pullrefresh.PullToRefreshScrollView
+        android:id="@+id/pageHome_msv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pageServerInfo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_server_info" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_twelve" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pageFloat_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine"/>
+                <LinearLayout
+                    android:id="@+id/pageFloatTitle_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:background="@drawable/white_no_corner_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_sixteen">
+
+                    <TextView
+                        android:id="@+id/pageComment_tv"
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/pageComment" />
+
+                    <TextView
+                        android:id="@+id/pageIntro_tv"
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_forty"
+                        android:visibility="gone"
+                        android:text="@string/pageIntro" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pageComment_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_topbottom_bg"
+                android:scrollbars="none" />
+            <LinearLayout
+                android:id="@+id/introduce_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/serverIntroMsg_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_sixteen"
+                        android:paddingLeft="@dimen/dp_twelve"
+                        android:text="@string/pageIntroTitle"/>
+                    <TextView
+                        android:id="@+id/serverIntroMsg_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_six"
+                        android:paddingLeft="@dimen/dp_sixteen"
+                        android:paddingRight="@dimen/dp_sixteen"
+                        android:paddingBottom="@dimen/dp_twelve"
+                        android:textSize="@dimen/sp_twelve"
+                        android:text="@string/pageIntroTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/serverStandard_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_zero_five"
+                        android:background="@color/colorLine"/>
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_sixteen"
+                        android:paddingLeft="@dimen/dp_twelve"
+                        android:text="@string/pageStandard"/>
+                    <TextView
+                        android:id="@+id/serverIntro_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_six"
+                        android:paddingLeft="@dimen/dp_sixteen"
+                        android:paddingRight="@dimen/dp_sixteen"
+                        android:paddingBottom="@dimen/dp_twelve"
+                        android:textSize="@dimen/sp_twelve"
+                        android:text="@string/pageIntroTitle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.xbx123.freedom.view.pullrefresh.PullToRefreshScrollView>
+</LinearLayout>

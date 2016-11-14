@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sexMale_tv"
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_eight"
+                android:gravity="center"
+                android:text="@string/sexMale" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_zero_five"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/sexFemale_tv"
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_eight"
+                android:gravity="center"
+                android:text="@string/sexFemale" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sexCancel_tv"
+            style="@style/txtBlack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_eight"
+            android:layout_marginBottom="@dimen/dp_twelve"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:background="@drawable/white_bg"
+            android:gravity="center"
+            android:text="@string/sexCancel"
+            android:textColor="@color/redColor" />
+    </LinearLayout>
+
+</RelativeLayout>

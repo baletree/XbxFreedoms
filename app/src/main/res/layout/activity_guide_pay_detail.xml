@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gPayDetailInfo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailInfo" />
+
+                    <TextView
+                        android:id="@+id/underOrderNum_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="2016101878964545" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailDest" />
+
+                    <TextView
+                        android:id="@+id/underOrderDest_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="成都" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailTripTime" />
+
+                    <TextView
+                        android:id="@+id/underTraveDate_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="2016-10-01至2016-10-07" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailTripPNum" />
+
+                    <TextView
+                        android:id="@+id/underTravePNum_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="3人" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailOrderTime" />
+
+                    <TextView
+                        android:id="@+id/underOrderTimes_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="2016-09-08 08:30:56" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gPayDetailFee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailServiceFee" />
+
+                    <TextView
+                        android:id="@+id/underSiglePrice_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="￥300/天" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailTripDNum" />
+
+                    <TextView
+                        android:id="@+id/underTraveDNum_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailTotalPrice" />
+
+                    <TextView
+                        android:id="@+id/underTotalPrice_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="￥800" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailPayWay" />
+
+                    <TextView
+                        android:id="@+id/underPayWay_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="未支付" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gPayDetailContacts" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_top_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailContactsName" />
+
+                    <TextView
+                        android:id="@+id/underContactsName_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="王小二" />
+                </RelativeLayout>
+
+                <View style="@style/viewLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/gPayDetailContactsPhone" />
+
+                    <TextView
+                        android:id="@+id/underContactsPhone_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_hundred"
+                        android:gravity="center_vertical"
+                        android:text="18602854129" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gPayDetailTripInfo" />
+
+            <ListView
+                android:id="@+id/underTravers_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_sixteen"
+                android:background="@drawable/border_top_bg"
+                android:divider="@color/colorLine"
+                android:dividerHeight="@dimen/dp_zero_five"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

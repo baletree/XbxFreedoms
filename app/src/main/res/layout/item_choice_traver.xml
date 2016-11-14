@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_traver_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <View style="@style/viewLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_five"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_jian_h" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_twelve"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_traverName_tv"
+                style="@style/txtBlack"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txtGray"
+                    android:text="@string/pageIdCard"
+                    android:textSize="@dimen/sp_eleven" />
+
+                <TextView
+                    android:id="@+id/item_traverCardId_tv"
+                    style="@style/txtGray"
+                    android:layout_marginLeft="@dimen/dp_four"
+                    android:text=""
+                    android:textSize="@dimen/sp_eleven" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

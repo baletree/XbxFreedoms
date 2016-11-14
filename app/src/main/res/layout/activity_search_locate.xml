@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_five"
+        android:background="@color/themeColor">
+
+        <RelativeLayout
+            android:id="@+id/searchBack_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_six"
+            android:padding="@dimen/dp_ten">
+
+            <ImageView
+                android:id="@+id/search_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp_six"
+                android:background="@mipmap/white_left_back" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_thirty_one"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchCancel_tv"
+            android:layout_toRightOf="@+id/searchBack_rl"
+            android:background="@drawable/border_input_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cityChoice_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cityChoice_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="成都" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:src="@mipmap/city_arrow" />
+                <View
+                    android:layout_width="@dimen/dp_zero_eight"
+                    android:layout_height="@dimen/dp_twenty_two"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:background="@color/colorLine"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/searchInput_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:background="@null"
+                android:hint="@string/searchHint"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_fourteen" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/searchCancel_tv"
+            style="@style/txtBlack"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_six"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:padding="@dimen/dp_six"
+            android:text="@string/searchClear"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_fourteen" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchLocate_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

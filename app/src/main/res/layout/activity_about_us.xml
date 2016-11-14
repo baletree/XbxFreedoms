@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_eight"
+        android:background="@color/themeColor">
+
+        <ImageView
+            android:id="@+id/aboutUsBack_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:padding="@dimen/dp_six"
+            android:src="@mipmap/white_left_back" />
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_centerInParent="true"
+            android:text="@string/aboutUsTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp_eighteen" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_forty_eight"
+        android:src="@mipmap/icon_yonghu" />
+
+    <TextView
+        android:id="@+id/versionName_tv"
+        style="@style/txtBlack"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_nine"
+        android:text="版本号1.0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_topbottom_bg"
+        android:paddingLeft="@dimen/dp_sixteen"
+        android:paddingRight="@dimen/dp_sixteen"
+        android:layout_marginTop="@dimen/dp_fifty">
+        <TextView
+            style="@style/txtBlack"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/aboutUsHotLine" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine"/>
+        <TextView
+            style="@style/txtBlack"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/aboutUsWebsite" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine"/>
+        <TextView
+            style="@style/txtBlack"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/aboutUsCooperation" />
+    </LinearLayout>
+</LinearLayout>

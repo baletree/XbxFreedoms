@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="@dimen/dp_six"
+            android:layout_marginLeft="@dimen/dp_eight"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_six"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/notiTitle"
+                style="@style/txtBlack"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_seventeen"
+                android:text="@string/app_name" />
+            <ProgressBar
+                android:id="@+id/updatePb"
+                android:layout_width="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/updateSizeTv"
+        style="@style/txtBlack"
+        android:textColor="@color/colorWhite"
+        android:layout_marginRight="@dimen/dp_eight"
+        android:layout_marginTop="@dimen/dp_fifteen"
+        android:layout_alignParentRight="true"
+        android:text="20%"/>
+</RelativeLayout>

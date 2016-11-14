@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_four"
+    android:paddingBottom="@dimen/dp_four"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_twenty_three">
+
+        <TextView
+            style="@style/txtGray"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/gPayDetailTripName"
+            android:textSize="@dimen/sp_twelve" />
+
+        <TextView
+            android:id="@+id/item_underContactsName_tv"
+            style="@style/txtBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_hundred"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/sp_twelve" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_twenty_three">
+
+        <TextView
+            style="@style/txtGray"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/gPayDetailTripIDCard"
+            android:textSize="@dimen/sp_twelve" />
+
+        <TextView
+            android:id="@+id/item_underContactsIdCard_tv"
+            style="@style/txtBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_hundred"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/sp_twelve" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_twenty_three">
+
+        <TextView
+            style="@style/txtGray"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/gPayDetailTripPhone"
+            android:textSize="@dimen/sp_twelve" />
+
+        <TextView
+            android:id="@+id/item_underContactsPhone_tv"
+            style="@style/txtBlack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_hundred"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="@dimen/sp_twelve" />
+    </RelativeLayout>
+</LinearLayout>

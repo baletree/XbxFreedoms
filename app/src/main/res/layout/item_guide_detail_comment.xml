@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_one"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/commentHead_img"
+            android:layout_width="@dimen/dp_twenty"
+            android:layout_height="@dimen/dp_twenty"
+            android:layout_gravity="center"
+            android:src="@mipmap/head_default"
+            app:riv_oval="true" />
+
+        <RatingBar
+            android:id="@+id/commentScoreRtb"
+            style="@style/roomRatingBar_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_four"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="1.9" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_tv"
+        style="@style/txtGray"
+        android:lineSpacingExtra="@dimen/dp_six"
+        android:paddingBottom="@dimen/dp_sixteen"
+        android:paddingTop="@dimen/dp_ten"
+        android:text="尊敬的灰色轨迹大家覅大家副教授的积分夫山地和粉色调都符合你看下翅膀vdyhgf速度发货" />
+
+
+</LinearLayout>

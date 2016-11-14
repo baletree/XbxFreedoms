@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/narratorCalled_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_top_bg"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nCalledTripScenic_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_sixteen">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/orderdown_locate" />
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:text="@string/callTripScenic" />
+
+            <TextView
+                android:id="@+id/tripScenic_tv"
+                style="@style/txtBlack"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_eight"
+                android:text="都江堰" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:src="@mipmap/bottom_arrow" />
+        </LinearLayout>
+
+        <View style="@style/viewLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/nCalledPNum_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/icon_renshu" />
+
+                <TextView
+                    android:id="@+id/nCalledPNum_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/nCallTripPNum"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_zero_five"
+                android:layout_height="@dimen/dp_thirty"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:id="@+id/nCalledLanguage_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_language" />
+
+                <TextView
+                    android:id="@+id/nCalledLanguage_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/callTripLanguage"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/viewLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/callByHour_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_two"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/callByHour_tv"
+                            style="@style/txtGray"
+                            android:layout_gravity="center_vertical"
+                            android:duplicateParentState="true"
+                            android:text="@string/callTripHour"
+                            android:textColor="@color/themeColor" />
+
+                        <ImageView
+                            android:id="@+id/callByHour_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:src="@mipmap/icon_gouxuan_xiao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:duplicateParentState="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/callByHourPrice_tv"
+                            style="@style/txtGray"
+                            android:duplicateParentState="true"
+                            android:text="60"
+                            android:textColor="@color/themeColor"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/callByHourPer_tv"
+                                style="@style/txtGray"
+                                android:text="@string/callTripPerYuan"
+                                android:textColor="@color/themeColor" />
+
+                            <View
+                                android:layout_width="@dimen/dp_six"
+                                android:layout_height="@dimen/dp_six" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_zero_five"
+                android:layout_height="@dimen/dp_forty_five"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp_eight"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:background="@color/colorLine"/>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/callByTime_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_two"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/callByTime_tv"
+                            style="@style/txtGray"
+                            android:layout_gravity="center_vertical"
+                            android:duplicateParentState="true"
+                            android:text="@string/callTripTimes" />
+
+                        <ImageView
+                            android:id="@+id/callByTime_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:src="@mipmap/icon_gouxuan_xiao"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:duplicateParentState="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/callByTimePrice_tv"
+                            style="@style/txtGray"
+                            android:duplicateParentState="true"
+                            android:text="300"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/callByTimePer_tv"
+                                style="@style/txtGray"
+                                android:text="@string/callTripPerTimes" />
+
+                            <View
+                                android:layout_width="@dimen/dp_six"
+                                android:layout_height="@dimen/dp_six" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/viewLine"
+            android:layout_marginBottom="@dimen/dp_sixteen" />
+
+        <TextView
+            android:id="@+id/callWayTip_tv"
+            style="@style/txtGray"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:text="@string/nCallHourTip" />
+
+        <TextView
+            android:id="@+id/callImmediate_tv"
+            style="@style/myBtnStyle"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/theme_rectangle_bg"
+            android:text="@string/nCallImmediate" />
+    </LinearLayout>
+</RelativeLayout>

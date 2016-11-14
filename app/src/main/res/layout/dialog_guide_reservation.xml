@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reservationActivityRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_top_bg"
+        android:clickable="true"
+        android:orientation="vertical">
+        <!--目的地-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:paddingLeft="@dimen/dp_sixteen">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/reservation_locate" />
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_eight"
+                android:text="@string/mainAppointLocate" />
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_eight"
+                android:text="@string/mainAppointLocateCD" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:src="@mipmap/bottom_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+        <!--出行日期-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/reservationDate_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_date" />
+
+                <TextView
+                    android:id="@+id/tripDate_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointDate"
+                    android:textColor="@color/themeColor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_zero_five"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_eight"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:background="@color/colorLine" />
+            <!--出行人数-->
+            <LinearLayout
+                android:id="@+id/reservationPNum_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_pnum" />
+
+                <TextView
+                    android:id="@+id/tripPNum_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointDNum"
+                    android:textColor="@color/themeColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+        <!--星级-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/reservationStar_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_star_ver" />
+
+                <TextView
+                    android:id="@+id/tripStar_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointStar"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_zero_five"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_eight"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:background="@color/colorLine" />
+            <!--语种-->
+            <LinearLayout
+                android:id="@+id/reservationLanguage_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_language" />
+
+                <TextView
+                    android:id="@+id/tripLanguage_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointLanguage"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+        <!--性别-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/reservationSex_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_sex" />
+
+                <TextView
+                    android:id="@+id/tripSex_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointSex"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_zero_five"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_eight"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:background="@color/colorLine" />
+            <!--服务费-->
+            <LinearLayout
+                android:id="@+id/reservationServiceFee_ll"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:src="@mipmap/reservation_mon" />
+
+                <TextView
+                    android:id="@+id/tripPriceFee_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text="@string/mainAppointMon"
+                    android:textColor="@color/colorHint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/guideNext_tv"
+            style="@style/myBtnStyle"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/theme_rectangle_bg"
+            android:text="@string/mainAppointNext" />
+    </LinearLayout>
+</RelativeLayout>

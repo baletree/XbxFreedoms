@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <ScrollView
+        android:id="@+id/orderPay_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_server_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twelve"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <include layout="@layout/item_order_info" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_fifty"
+                    android:layout_marginRight="@dimen/dp_fifty"
+                    android:orientation="vertical">
+                    <!--打赏、横线-->
+                    <RelativeLayout
+                        android:id="@+id/payReward_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five"
+                        android:layout_marginTop="@dimen/dp_thirteen"
+                        android:background="@color/colorWhite">
+                        <View
+                            android:id="@+id/rewardSplitLine_v"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_zero_five"
+                            android:background="@color/colorLine" />
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_centerVertical="true"
+                            android:text="@string/oDetailReward" />
+
+                        <TextView
+                            android:id="@+id/payReward_tv"
+                            style="@style/txtBlack"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp_twelve"
+                            android:text="@string/noReward"
+                            android:textColor="@color/colorReward" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/right_arrow" />
+                    </RelativeLayout>
+                    <!--优惠券-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_centerVertical="true"
+                            android:text="@string/oDetailCoupons" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/payCouponPrice_tv"
+                                style="@style/txtBlack"
+                                android:layout_centerVertical="true"
+                                android:text="10" />
+
+                            <TextView
+                                android:id="@+id/payCouponType_tv"
+                                style="@style/txtBlack"
+                                android:layout_centerVertical="true"
+                                android:text="@string/oDetailCouponDeduction" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:src="@mipmap/right_arrow" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--支付方式-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_twenty_fives">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_zero_five"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorLine" />
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/colorWhite"
+                            android:paddingLeft="@dimen/dp_sixteen"
+                            android:paddingRight="@dimen/dp_sixteen"
+                            android:text="@string/oDetailPayWay"
+                            android:textColor="@color/colorHint" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_pay_choice" />
+
+                    <Button
+                        android:id="@+id/payNow_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/dp_twenty_fives"
+                        android:background="@drawable/theme_rectangle_bg"
+                        android:text="@string/oDetailPayNow"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp_sixteen" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainMenu_drawl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/titleBg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="none"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.xbx123.freedom.view.views.BanSlideViewpager
+                    android:id="@+id/mainFrag_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_eight"
+                android:background="@color/titleBg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/mainMenu_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:padding="@dimen/dp_ten"
+                    android:src="@mipmap/main_menu" />
+
+                <ImageView
+                    android:id="@+id/mainBack_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:padding="@dimen/dp_ten"
+                    android:src="@mipmap/left_back"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mainTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mainTitle"
+                    android:textColor="@color/colorBTxt"
+                    android:textSize="@dimen/sp_eighteen" />
+
+                <ImageView
+                    android:id="@+id/mainActive_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_six"
+                    android:paddingLeft="@dimen/dp_ten"
+                    android:src="@mipmap/main_active"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mainMore_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_ten"
+                    android:padding="@dimen/dp_six"
+                    android:text="@string/mainMore"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:layout_alignParentBottom="true"
+                    android:background="#BEBEBE" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_contain_layout" />
+</android.support.v4.widget.DrawerLayout>

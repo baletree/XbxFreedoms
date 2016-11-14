@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--服务人员的信息和服务状态-->
+    <RelativeLayout
+        android:id="@+id/mainServerInfo_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_forty_eight"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_server_info" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_zero_five"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_five"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <TextView
+                    android:id="@+id/callSuccess_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_six"
+                    android:text="@string/mainCallSuccess"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    android:id="@+id/serversLocateState_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/mainCallInRoad"
+                    android:textSize="@dimen/sp_twelve" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/item_price_assess" />
+
+    <LinearLayout
+        android:id="@+id/onMapfuc_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mainServerInfo_rl"
+        android:layout_toRightOf="@+id/mainServerInfo_rl"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_forty_eight"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <RadioGroup
+                        android:id="@+id/mainCheck_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/mainCheckZero_rb"
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_twenty_four"
+                            android:layout_marginRight="@dimen/dp_twenty_four"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_selector_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/mainCheckZero"
+                            android:textColor="@drawable/main_radiocheck" />
+
+                        <RadioButton
+                            android:id="@+id/mainCheckOne_rb"
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_twenty_four"
+                            android:layout_marginRight="@dimen/dp_twenty_four"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_selector_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/mainCheckOne"
+                            android:textColor="@drawable/main_radiocheck" />
+
+                        <RadioButton
+                            android:id="@+id/mainCheckTwo_rb"
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_twenty_four"
+                            android:layout_marginRight="@dimen/dp_twenty_four"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_selector_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/mainCheckTwo"
+                            android:textColor="@drawable/main_radiocheck" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_twenty"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="@dimen/dp_zero_five"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorLine" />
+
+                        <View
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="@dimen/dp_zero_five"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorLine" />
+
+                        <View
+                            android:layout_width="@dimen/dp_zero"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/mainLocate_txt"
+                        style="@style/txtBlack"
+                        android:layout_height="@dimen/dp_thirty_two"
+                        android:background="@drawable/border_gray_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_twelve"
+                        android:paddingRight="@dimen/dp_twelve"
+                        android:text="@string/mainNoGuide"
+                        android:textColor="@color/colorBTxt"
+                        android:textSize="@dimen/sp_twelve"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_thirty_one"
+                        android:src="@mipmap/icon_triangle" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/userMark_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_three"
+                    android:src="@mipmap/frag_selfpin" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <!--景区讲解、全名向导-马上呼叫-->
+            <RelativeLayout
+                android:id="@+id/narratorCall_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_sixteen"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mainCall_btn"
+                    style="@style/myBtnStyle"
+                    android:text="@string/mainCall" />
+            </RelativeLayout>
+            <!--导游即时呼叫和预约-->
+            <RelativeLayout
+                android:id="@+id/guideCall_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_sixteen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mainCallGuide_btn"
+                        style="@style/myBtnStyle"
+                        android:layout_width="@dimen/dp_zero"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/dp_eight"
+                        android:layout_toRightOf="@+id/mainAppointGuide_btn"
+                        android:layout_weight="44"
+                        android:background="@drawable/btn_ddd_rectangle"
+                        android:text="@string/mainCallGuide" />
+
+                    <TextView
+                        android:id="@+id/mainAppointGuide_btn"
+                        style="@style/myBtnStyle"
+                        android:layout_width="@dimen/dp_zero"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp_eight"
+                        android:layout_weight="20"
+                        android:background="@drawable/btn_ffc6_rectangle"
+                        android:text="@string/mainAppointGuide" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/mainSelfLocate_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_ninety_six"
+                android:layout_marginLeft="@dimen/dp_sixteen"
+                android:src="@mipmap/main_self_locate" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

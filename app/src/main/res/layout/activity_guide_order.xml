@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_server_info" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_twelve" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+                <!--成功支付提示-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_zero_five"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:id="@+id/guidePayTip_tv"
+                        style="@style/txtBlack"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp_two"
+                        android:background="@color/colorWhite"
+                        android:paddingLeft="@dimen/dp_sixteen"
+                        android:paddingRight="@dimen/dp_sixteen"
+                        android:text="@string/oDetailAlreadyPay"
+                        android:textColor="@color/colorHint" />
+                </RelativeLayout>
+                <!--已经支付的价格显示-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_sixteen"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/guidePayPrice_tv"
+                        style="@style/txtBlack"
+                        android:text="￥800"
+                        android:textSize="@dimen/sp_twenty_six" />
+
+                    <ImageView
+                        android:id="@+id/orderIntoPayInfo_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_twelve"
+                        android:src="@mipmap/right_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_forty_five"
+                android:layout_marginBottom="@dimen/dp_forty_five"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/oDetailOrderNum" />
+
+                    <TextView
+                        android:id="@+id/guideOrderNum_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="201698438493857394" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideOrderLocate" />
+
+                    <TextView
+                        android:id="@+id/guideOrderLocate_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="成都" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideOrderDate" />
+
+                    <TextView
+                        android:id="@+id/guideOrderDate_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="2016-10-01" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_fourteen"
+                    android:layout_marginBottom="@dimen/dp_fourteen"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideOrderPNum" />
+                    <ListView
+                        android:id="@+id/tripNumInfo_lv"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideUngencyContacts" />
+
+                    <TextView
+                        android:id="@+id/guideEeContact_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="段文斌 18602854129" />
+                </LinearLayout>
+            </LinearLayout>
+            <include
+                android:id="@+id/commentSubmit_ll"
+                layout="@layout/item_comment_submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

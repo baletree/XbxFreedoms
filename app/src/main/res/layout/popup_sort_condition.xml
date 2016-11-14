@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sortCondition_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMidTrans"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sortGuideItem_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_seventy"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dp_twenty"
+        android:paddingLeft="@dimen/dp_eight"
+        android:paddingRight="@dimen/dp_eight"
+        android:paddingTop="@dimen/dp_ten" />
+</LinearLayout>

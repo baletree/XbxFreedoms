@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_topbottom_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/orderMoney_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sixty_four"
+            android:paddingLeft="@dimen/sp_sixteen"
+            android:paddingRight="@dimen/sp_sixteen">
+
+            <TextView
+                android:id="@+id/payDetTip_tv"
+                style="@style/txtBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/oDetailNeedPay"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/sp_sixteen" />
+
+            <TextView
+                android:id="@+id/payDetMon_tv"
+                style="@style/txtBlack"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="￥100"
+                android:textSize="@dimen/sp_eighteen" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_ten"
+            android:paddingLeft="@dimen/dp_sixteen"
+            android:paddingRight="@dimen/dp_sixteen">
+            <!--开始时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twelve">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/oDetailStart"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/startTime_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--结束时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/oDetailEnd"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/endTime_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--服务时长-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/oDetailServerTime"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/lengthTime_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--服务费-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    android:id="@+id/serviceTip_tv"
+                    style="@style/txtBlack"
+                    android:text="@string/payService"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/serviceMon_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--打赏-->
+            <RelativeLayout
+                android:id="@+id/rewardMon_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/payReward"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/rewardMon_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--优惠-->
+            <RelativeLayout
+                android:id="@+id/couponMon_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/payCoupons"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/couponMon_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--减免-->
+            <RelativeLayout
+                android:id="@+id/payBreaks_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/payBreaks"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/payBreaks_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+            <!--减免-->
+            <RelativeLayout
+                android:id="@+id/payWays_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/payWays"
+                    android:textColor="@color/colorHint" />
+
+                <TextView
+                    android:id="@+id/payWays_tv"
+                    style="@style/txtBlack"
+                    android:layout_alignParentRight="true"
+                    android:text="" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pageBg"
+	android:orientation="vertical">
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_forty_five"
+		android:background="@color/titleBg">
+		<TextView
+			style="@style/txtBlack"
+			android:layout_centerInParent="true"
+			android:text="@string/wxPayResult"/>
+		<TextView
+			android:id="@+id/wxPayFinish_tv"
+			style="@style/txtBlack"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:padding="@dimen/dp_twelve"
+			android:textColor="@color/themeColor"
+			android:text="@string/wxPayFinish"/>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="@dimen/dp_sixteen"
+		android:background="@drawable/border_topbottom_bg">
+		<ImageView
+			android:layout_width="65dp"
+			android:layout_height="57dp"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/wx_logo"/>
+		<TextView
+			android:id="@+id/wxPayResultInfo_tv"
+			style="@style/txtBlack"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_sixteen"
+			android:text=""/>
+	</LinearLayout>
+	
+</LinearLayout>

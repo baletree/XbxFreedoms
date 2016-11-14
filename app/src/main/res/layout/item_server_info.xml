@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/serverInfo_rl"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/colorWhite"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_sixteen"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_fifty_two"
+            android:layout_height="@dimen/dp_fifty_two"
+            android:background="@drawable/theme_circle_bg">
+
+            <ImageView
+                android:layout_width="@dimen/dp_fifty"
+                android:layout_height="@dimen/dp_fifty"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/head_default" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/serverHead_img"
+                android:layout_width="@dimen/dp_fifty"
+                android:layout_height="@dimen/dp_fifty"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/head_default"
+                app:riv_oval="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_eight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/serverName_tv"
+                style="@style/txtBlack"
+                android:textStyle="bold"
+                android:text="梁彬城" />
+
+            <TextView
+                android:id="@+id/serverIdCard_tv"
+                style="@style/txtBlack"
+                android:text=""
+                android:visibility="gone"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/sp_twelve" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_one"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/serverInfo_rtb"
+                    style="@style/roomRatingBar_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="1.9" />
+
+                <TextView
+                    android:id="@+id/serverTime_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:text=""
+                    android:textSize="@dimen/sp_twelve" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/serverPhone_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_six"
+        android:padding="@dimen/dp_ten"
+        android:src="@mipmap/server_phone" />
+</RelativeLayout>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pageBg"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--上层头像布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:paddingTop="@dimen/dp_ten">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp_sixty_six"
+                        android:layout_height="@dimen/dp_sixty_six"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:background="@drawable/theme_circle_bg">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/reservationGHead_img"
+                            android:layout_width="@dimen/dp_sixty_four"
+                            android:layout_height="@dimen/dp_sixty_four"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/head_default"
+                            app:riv_oval="true" />
+                    </RelativeLayout>
+                    <!--导游基本信息-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_twelve"
+                        android:layout_marginTop="@dimen/dp_two"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/reGuideName_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:text="" />
+
+                            <ImageView
+                                android:id="@+id/reGuideSex_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:src="@mipmap/icon_nv" />
+
+                            <TextView
+                                android:id="@+id/reGuideLanguage_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:text=""
+                                android:textColor="@color/colorHint"
+                                android:textSize="@dimen/sp_twelve" />
+
+                            <View
+                                android:layout_width="@dimen/dp_zero_five"
+                                android:layout_height="@dimen/dp_twelve"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:background="@color/colorHint" />
+
+                            <TextView
+                                android:id="@+id/reGuideAge_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:text=""
+                                android:textColor="@color/colorHint"
+                                android:textSize="@dimen/sp_twelve" />
+
+                            <View
+                                android:layout_width="@dimen/dp_zero_five"
+                                android:layout_height="@dimen/dp_twelve"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:background="@color/colorHint" />
+
+                            <TextView
+                                android:id="@+id/reGuideJobAge_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_six"
+                                android:text=""
+                                android:textColor="@color/colorHint"
+                                android:textSize="@dimen/sp_twelve" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_one"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txtBlack"
+                                android:text="@string/guideStar" />
+
+                            <RatingBar
+                                android:id="@+id/reGuideStar_rtb"
+                                style="@style/guideRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_eight"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:rating="1.9" />
+                        </LinearLayout>
+                        <!--导游证号-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_one"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/icon_guide_card" />
+
+                            <TextView
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_seven"
+                                android:text="@string/guideDetailCertNo"
+                                android:textSize="@dimen/sp_twelve" />
+
+                            <TextView
+                                android:id="@+id/reGuideCard_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:text=""
+                                android:textSize="@dimen/sp_twelve" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_sixteen"
+                    android:paddingRight="@dimen/dp_sixteen">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five">
+
+                        <TextView
+                            style="@style/txtGray"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideTripDate" />
+
+                        <TextView
+                            android:id="@+id/reGuideTripDate_tv"
+                            style="@style/txtBlack"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_zero_five"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five">
+
+                        <TextView
+                            style="@style/txtGray"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideTripDateNum" />
+
+                        <TextView
+                            android:id="@+id/reGuideTripDateNum_tv"
+                            style="@style/txtBlack"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_zero_five"
+                        android:background="@color/colorLine" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five">
+
+                        <TextView
+                            style="@style/txtGray"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideTripPNum" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/clientNumLess_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp_six"
+                                android:src="@mipmap/icon_jian_yuan" />
+
+                            <TextView
+                                android:id="@+id/reGuideTripPNum_tv"
+                                style="@style/txtBlack"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_sixteen"
+                                android:text="1" />
+
+                            <ImageView
+                                android:id="@+id/clientNumAdd_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_sixteen"
+                                android:padding="@dimen/dp_six"
+                                android:src="@mipmap/icon_jia_yuan" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/guideTripScenic_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_zero_five"
+                            android:background="@color/colorLine" />
+
+                        <TextView
+                            style="@style/txtGray"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideTripScenic" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/right_arrow" />
+                    </RelativeLayout>
+
+                    <com.xbx123.freedom.view.views.FlowLayout
+                        android:id="@+id/guideTripScenic_fl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_fifteen"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_sixteen"
+                    android:paddingRight="@dimen/dp_sixteen">
+
+                    <RelativeLayout
+                        android:id="@+id/guideAddUpdate_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five">
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideAddGuider" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/txtGray"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp_twenty"
+                                android:text="@string/guideAddGuiderTip"
+                                android:textSize="@dimen/sp_twelve" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/icon_jia_fang" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/travelerList_lv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/colorTrans"
+                        android:dividerHeight="@dimen/dp_zero"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_sixteen"
+                    android:paddingRight="@dimen/dp_sixteen">
+
+                    <RelativeLayout
+                        android:id="@+id/UrgencyPeo_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_forty_five">
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_centerVertical="true"
+                            android:text="@string/guideUrgencyPeo" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_jia_fang" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/urgencyInfo_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_zero_five"
+                            android:background="@color/colorLine" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_forty_five">
+
+                            <TextView
+                                style="@style/txtGray"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/guideUrgencyPName" />
+
+                            <EditText
+                                android:id="@+id/reUrgencyPName_tv"
+                                style="@style/txtBlack"
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@color/colorTrans"
+                                android:maxLength="10"
+                                android:layout_marginLeft="@dimen/dp_ninety"
+                                android:text="" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_zero_five"
+                            android:background="@color/colorLine" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_forty_five">
+
+                            <TextView
+                                style="@style/txtGray"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/guideUrgencyPhone" />
+
+                            <EditText
+                                android:id="@+id/reUrgencyPhone_tv"
+                                style="@style/txtBlack"
+                                android:background="@color/colorTrans"
+                                android:layout_width="match_parent"
+                                android:layout_centerVertical="true"
+                                android:maxLength="11"
+                                android:inputType="number"
+                                android:layout_marginLeft="@dimen/dp_ninety"
+                                android:text="" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_sixteen"
+                    android:paddingRight="@dimen/dp_sixteen"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideGuideNote" />
+
+                    <EditText
+                        android:id="@+id/reRemarks_et"
+                        style="@style/txtHint"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:hint="@string/guideGuideNoteTip"
+                        android:textSize="@dimen/sp_twelve" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_fifty"
+                    android:layout_marginBottom="@dimen/dp_forty_five"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/guideKnow_cb"
+                        android:layout_width="@dimen/dp_fifteen"
+                        android:layout_height="@dimen/dp_fifteen"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/contract_checked"
+                        android:button="@null" />
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_six"
+                        android:text="@string/guideGuideRead" />
+
+                    <TextView
+                        android:id="@+id/readKnowTxt_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guideGuideReadKnow"
+                        android:textColor="@color/themeColor" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/guidePrice" />
+
+                    <TextView
+                        android:id="@+id/guideTotalPrice_tv"
+                        style="@style/txtGray"
+                        android:layout_gravity="center_vertical"
+                        android:text="￥400"
+                        android:textColor="@color/ff8Color"
+                        android:textSize="@dimen/sp_twenty" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/submitAppoint_tv"
+                android:layout_width="@dimen/dp_zero"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/themeColor"
+                android:gravity="center"
+                android:text="@string/guideSubmitAppoint"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_sixteen" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reservationDate">
+        <item>1天</item>
+        <item>2天</item>
+        <item>3天</item>
+        <item>4天</item>
+        <item>5天</item>
+    </string-array>
+    <string-array name="reservationStar">
+        <item>星级不限</item>
+        <item>一星</item>
+        <item>二星</item>
+        <item>三星</item>
+        <item>四星</item>
+        <item>五星</item>
+    </string-array>
+    <string-array name="reservationLanguage">
+        <item>普通话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="reservationSex">
+        <item>性别不限</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="reservationServiceFee">
+        <item>服务费不限</item>
+        <item>100-300元</item>
+        <item>300-500元</item>
+        <item>500-700元</item>
+    </string-array>
+    <string-array name="sortGuideStr">
+        <item>默认</item>
+        <item>价格最高</item>
+        <item>价格最低</item>
+        <!--<item>星级优先</item>
+        <item>年龄最高</item>
+        <item>年龄最低</item>-->
+    </string-array>
+    <string-array name="cancelReason">
+        <item>有事去不了</item>
+        <item>平台印象差</item>
+        <item>价格不合意</item>
+        <item>导游的评价太差</item>
+        <item>导游不合我意</item>
+        <item>其他</item>
+    </string-array>
+</resources>

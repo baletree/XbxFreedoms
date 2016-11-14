@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/payAttentionTip_tv"
+            style="@style/txtBlack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_two"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dp_sixteen"
+            android:paddingRight="@dimen/dp_sixteen"
+            android:textColor="@color/colorHint"
+            android:text="@string/oDetailNeedPay" />
+    </RelativeLayout>
+    <!--金额显示-->
+    <RelativeLayout
+        android:id="@+id/orderMoney_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_forty_five"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_ten">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/orderInfoPrice_tv"
+                style="@style/txtBlack"
+                android:text=""
+                android:textSize="@dimen/sp_twenty_six" />
+
+            <ImageView
+                android:id="@+id/orderIntoPayInfo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_twelve"
+                android:src="@mipmap/right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--订单编号、下单地址-->
+    <LinearLayout
+        android:id="@+id/orderNumLocate_ll"
+        android:layout_width="@dimen/dp_thundred_sixty"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/orderNum_Ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtBlack"
+                android:textColor="@color/colorHint"
+                android:layout_gravity="center_vertical"
+                android:text="@string/oDetailOrderNum"
+                android:textSize="@dimen/sp_twelve" />
+
+            <TextView
+                android:id="@+id/orderInfoNum_tv"
+                style="@style/txtBlack"
+                android:textColor="@color/colorHint"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:text="2016052405034"
+                android:textSize="@dimen/sp_twelve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_six"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/dp_one"
+                android:src="@mipmap/od_locate" />
+
+            <TextView
+                android:id="@+id/orderInfoLocate_tv"
+                style="@style/txtBlack"
+                android:textColor="@color/colorHint"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_six"
+                android:text="天府三街大源国际中心"
+                android:textSize="@dimen/sp_twelve" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--取消订单提醒-->
+    <LinearLayout
+        android:id="@+id/orderCancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:layout_marginBottom="@dimen/dp_six"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/icon_gantanhao"/>
+        <TextView
+            android:id="@+id/orderCancelClose_tv"
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/orderCancel"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:textSize="@dimen/sp_twelve" />
+        <TextView
+            android:id="@+id/orderCancelCloseTip_tv"
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/orderCancelHint"
+            android:layout_marginTop="@dimen/dp_three"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/sp_twelve" />
+    </LinearLayout>
+</LinearLayout>

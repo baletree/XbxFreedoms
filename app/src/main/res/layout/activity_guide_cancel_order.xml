@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        android:id="@+id/gCancelLayout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_fourteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txtGray"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gCancelReason"
+                android:textSize="@dimen/sp_twelve" />
+
+            <RelativeLayout
+                android:id="@+id/cancelReasonChoice_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:background="@drawable/border_topbottom_bg"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <TextView
+                    android:id="@+id/cancelReason_tv"
+                    style="@style/txtGray"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/gCancelReasonChoice"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/bottom_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/txtGray"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:text="@string/gCancelReasonComplain"
+                android:textSize="@dimen/sp_twelve" />
+
+            <EditText
+                android:id="@+id/gCancelReasonMsg_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fifty_five"
+                android:background="@drawable/border_topbottom_bg"
+                android:gravity="top"
+                android:maxLength="100"
+                android:paddingBottom="@dimen/dp_six"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen"
+                android:paddingTop="@dimen/dp_six"
+                android:textSize="@dimen/sp_twelve" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty_five"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_sixteen">
+
+                <TextView
+                    style="@style/txtGray"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/gCancelRefund" />
+
+                <TextView
+                    android:id="@+id/gCancelRefund_tv"
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_sixteen">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/gCancelRefundRule"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    style="@style/txtGray"
+                    android:layout_marginTop="@dimen/dp_four"
+                    android:text="1.行程开始前19天至17天扣除5%\n2.开始前6天至3天扣除10%\n3.开始前2天至1天扣除20%\n4.开始当天扣除30%"
+                    android:textSize="@dimen/sp_twelve" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gCancelSure_tv"
+            style="@style/myBtnStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_fifty_five"
+            android:layout_marginRight="@dimen/dp_fifty_five"
+            android:text="@string/gCancelSure" />
+    </RelativeLayout>
+</LinearLayout>

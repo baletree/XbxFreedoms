@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <ScrollView
+        android:id="@+id/orderDetail_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_server_info" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_twelve"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_twenty"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <include layout="@layout/item_order_info" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/commentSubmit_ll"
+                layout="@layout/item_comment_submit" />
+
+            <include
+                android:id="@+id/commentShow_ll"
+                layout="@layout/item_comment_show" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

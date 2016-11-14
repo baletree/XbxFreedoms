@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/listGuideSort_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/page_title" />
+
+        <CheckBox
+            android:id="@+id/guideSortList_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_six"
+            android:drawableRight="@drawable/sort_guide_checked"
+            android:text="@string/guideSort"
+            android:textColor="@color/mainCheckColor"
+            android:textSize="@dimen/sp_fourteen" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/guideList_plv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listGuideSort_rl"
+        android:cacheColorHint="@color/colorTrans"
+        android:divider="@color/colorTrans"
+        android:dividerHeight="@dimen/dp_eight"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <LinearLayout
+        android:id="@+id/sortGuideList_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listGuideSort_rl"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/popup_sort_condition" />
+    </LinearLayout>
+
+</RelativeLayout>

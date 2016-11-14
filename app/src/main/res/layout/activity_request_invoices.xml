@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+    <include layout="@layout/page_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/invoicesRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nextStep_rl"/>
+        <RelativeLayout
+            android:id="@+id/nextStep_rl"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/dp_seventy_three"
+            android:background="@color/colorWhite">
+            <Button
+                android:id="@+id/nextStep_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_eight"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_sixteen"
+                android:layout_marginRight="@dimen/dp_sixteen"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:layout_marginBottom="@dimen/dp_twelve"
+                android:background="@drawable/theme_rectangle_bg"
+                android:text="@string/nextStep"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_sixteen" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

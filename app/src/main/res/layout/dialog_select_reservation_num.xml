@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogReservation_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pageBg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_ten"
+            android:paddingRight="@dimen/dp_ten"
+            android:paddingTop="@dimen/dp_six">
+
+            <TextView
+                android:id="@+id/select_revCancel_tv"
+                style="@style/txtBlack"
+                android:padding="@dimen/dp_six"
+                android:text="@string/mainAppointCancel"
+                android:visibility="gone"
+                android:textColor="@color/themeColor" />
+
+            <TextView
+                android:id="@+id/select_revSure_tv"
+                style="@style/txtBlack"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp_six"
+                android:text="@string/mainAppointSure"
+                android:textColor="@color/themeColor" />
+        </RelativeLayout>
+
+        <com.xbx123.freedom.view.views.WheelView
+            android:id="@+id/select_reservation_wlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten" />
+    </LinearLayout>
+</RelativeLayout>

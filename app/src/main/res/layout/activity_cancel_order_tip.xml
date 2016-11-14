@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg">
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_hundred_fifty"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/isPayImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/free_cancel" />
+
+        <TextView
+            android:id="@+id/serverTipTv"
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:text="@string/cancelOrderHint1"
+            android:textSize="@dimen/sp_fifteen" />
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/cancelOrderHint2"
+            android:textSize="@dimen/sp_fifteen" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_six">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cancelOrderHint3"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cancelOrderHint4"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cancelOrderHint5"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cancelOrderHint6"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/sp_twelve" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/noCancelBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:background="@drawable/border_thembtn_bg"
+            android:text="@string/cancelOrderNo"
+            android:textColor="@color/themeColor"
+            android:textSize="@dimen/sp_fifteen" />
+
+        <Button
+            android:id="@+id/yesCancelBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:layout_marginBottom="@dimen/dp_sixteen"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:layout_marginTop="@dimen/dp_twelve"
+            android:background="@drawable/theme_rectangle_bg"
+            android:text="@string/cancelOrderYes"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_fifteen" />
+    </LinearLayout>
+</RelativeLayout>

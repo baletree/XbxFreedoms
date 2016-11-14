@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/itemSelect_InsurerRl"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="@dimen/dp_fifty_five">
+        <TextView
+            android:id="@+id/itemSelect_InsurerNameTv"
+            style="@style/txtBlack"
+            android:text="梁彬城"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_sixteen"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                style="@style/txtBlack"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/sp_twelve"
+                android:text="@string/insurerIdCardN"/>
+            <TextView
+                android:id="@+id/itemSelect_InsurerNameId"
+                android:textColor="@color/colorHint"
+                android:text="341222199003036850"
+                android:textSize="@dimen/sp_twelve"
+                style="@style/txtBlack"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_fifty"
+    android:layout_marginRight="@dimen/dp_fifty"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:layout_centerVertical="true"
+            android:background="@color/colorLine" />
+
+        <TextView
+            style="@style/txtBlack"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dp_twelve"
+            android:paddingRight="@dimen/dp_twelve"
+            android:text="@string/commentNoName"
+            android:textSize="@dimen/sp_twelve" />
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/commentStar_rtb"
+        style="@style/roomRatingBar_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_twenty"
+        android:layout_marginTop="@dimen/dp_twenty"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1.0" />
+
+    <LinearLayout
+        android:id="@+id/commentOperate_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.xbx123.freedom.view.views.FlowLayout
+            android:id="@+id/commentTag_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/commentMsg_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_eighty"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/border_input_bg"
+            android:gravity="top"
+            android:hint="@string/commentMsg"
+            android:maxLength="80"
+            android:padding="@dimen/dp_eight"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/sp_twelve" />
+
+        <Button
+            android:id="@+id/commentSubmit_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_eight"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_twelve"
+            android:layout_marginTop="@dimen/dp_sixteen"
+            android:background="@drawable/theme_rectangle_bg"
+            android:text="@string/commentSubmit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_sixteen" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg">
+
+    <include
+        android:id="@+id/callServer_rl"
+        layout="@layout/page_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nativeCall_rl"
+        android:layout_below="@+id/callServer_rl"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/choiceInsurer_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:background="@drawable/border_topbottom_bg"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:text="@string/choiceInsurer" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_jia_fang" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/insurerInfo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_twelve"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:text="@string/callRealName" />
+
+                    <TextView
+                        android:id="@+id/callRealName_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginLeft="@dimen/dp_eighty"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColorHint="@color/colorHint" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:text="@string/callIdCard" />
+
+                    <TextView
+                        android:id="@+id/callIdCard_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginLeft="@dimen/dp_eighty"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColorHint="@color/colorHint" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <TextView
+                    style="@style/txtBlack"
+                    android:text="@string/callInsuranceHint"
+                    android:textSize="@dimen/sp_twelve" />
+
+                <TextView
+                    android:id="@+id/callInsDetail_tv"
+                    style="@style/txtBlack"
+                    android:layout_marginLeft="@dimen/dp_six"
+                    android:paddingRight="@dimen/dp_sixteen"
+                    android:text="@string/callInsuranceDetail"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/sp_twelve" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_twelve"
+                android:layout_marginTop="@dimen/dp_twenty_fives">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_forty_five"
+                    android:background="@drawable/border_topbottom_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_sixteen"
+                    android:paddingRight="@dimen/dp_sixteen">
+
+                    <TextView
+                        android:id="@+id/callPriceExplain_tv"
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_sixty"
+                        android:text=""
+                        android:textSize="@dimen/sp_fourteen" />
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_sixteen"
+                        android:text="@string/callAttention"
+                        android:textColor="@color/themeColor"
+                        android:textSize="@dimen/sp_twelve" />
+
+                    <TextView
+                        android:id="@+id/nCallTipOne_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_three"
+                        android:text="@string/callAttentionOne"
+                        android:textColor="@color/themeColor"
+                        android:textSize="@dimen/sp_twelve" />
+
+                    <TextView
+                        android:id="@+id/nCallTipTwo_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginTop="@dimen/dp_three"
+                        android:text="@string/callAttentionTwo"
+                        android:textColor="@color/themeColor"
+                        android:textSize="@dimen/sp_twelve" />
+
+                    <TextView
+                        android:id="@+id/nCallTipThree_tv"
+                        style="@style/txtBlack"
+                        android:layout_marginBottom="@dimen/dp_twenty_two"
+                        android:layout_marginTop="@dimen/dp_three"
+                        android:text="@string/callAttentionThree"
+                        android:textColor="@color/themeColor"
+                        android:textSize="@dimen/sp_twelve" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_ninety"
+                    android:layout_height="@dimen/dp_ninety"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/theme_circle_bg">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/dp_three"
+                            android:text="￥"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_twelve"/>
+
+                        <TextView
+                            android:id="@+id/callPrice_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_thirty" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/dp_three"
+                            android:text="@string/callSingleHour"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_ten" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/nativeCall_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_seventy_four"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_topbottom_bg">
+
+        <Button
+            android:id="@+id/nativeCall_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_eight"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:background="@drawable/theme_rectangle_bg"
+            android:text="@string/callTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_sixteen" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:background="@drawable/border_topbottom_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_sixteen"
+        android:paddingRight="@dimen/dp_sixteen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/insurerMsg" />
+
+            <EditText
+                android:id="@+id/insurerNameEt"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_eighty"
+                android:gravity="center_vertical"
+                android:hint="@string/insurerMsgHint"
+                android:maxLength="6"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/insurerCardType" />
+
+            <TextView
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_eighty"
+                android:gravity="center_vertical"
+                android:maxLength="18"
+                android:text="身份证"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/insurerIdCard" />
+
+            <EditText
+                android:id="@+id/insurerIdCardEt"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_eighty"
+                android:gravity="center_vertical"
+                android:hint="@string/insurerIdCardHint"
+                android:maxLength="18"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five">
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_centerVertical="true"
+                android:text="@string/insurerPhone" />
+
+            <EditText
+                android:id="@+id/insurerPhoneEt"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_eighty"
+                android:gravity="center_vertical"
+                android:hint="@string/insurerPhoneHint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/insurerSave_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty_eight"
+        android:layout_margin="@dimen/dp_sixteen"
+        android:background="@drawable/theme_rectangle_bg"
+        android:text="@string/insurerFinish"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_sixteen" />
+</LinearLayout>

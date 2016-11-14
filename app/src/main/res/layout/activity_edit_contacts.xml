@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_eight"
+        android:background="@drawable/border_topbottom_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_sixteen"
+        android:paddingRight="@dimen/dp_sixteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtBlack"
+                android:text="@string/fContactsName" />
+
+            <EditText
+                android:id="@+id/fContactsName_et"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="6"
+                android:layout_marginLeft="@dimen/dp_sixteen"
+                android:hint="@string/fContactsNameTip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_zero_five"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty_five"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtBlack"
+                android:text="@string/fContactsPhone" />
+
+            <EditText
+                android:id="@+id/fContactsPhone_et"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_sixteen"
+                android:hint="@string/fContactsPhoneTip"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fContactSave_btn"
+        style="@style/myBtnStyle"
+        android:layout_margin="@dimen/dp_sixteen"
+        android:text="@string/fContactsTitleSave" />
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderItem_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_twelve"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_topbottom_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_sixteen"
+            android:paddingRight="@dimen/dp_sixteen">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_five">
+
+                <TextView
+                    android:id="@+id/orLState_tv"
+                    style="@style/txtBlack"
+                    android:layout_centerVertical="true"
+                    android:text="服务中" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/olPrice_tv"
+                        style="@style/txtBlack"
+                        android:text="100.0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_zero_five"
+                android:background="@color/colorLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_nine"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/oLServerType_tv"
+                            android:layout_width="@dimen/dp_fourteen"
+                            android:layout_height="@dimen/dp_fourteen"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/theme_circle_bg"
+                            android:gravity="center"
+                            android:text="讲"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_eight" />
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:text="@string/oLOrderNum"
+                            android:textColor="@color/colorOrderNum"
+                            android:textSize="@dimen/sp_twelve" />
+
+                        <TextView
+                            android:id="@+id/oLOrderNum_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_three"
+                            android:text="26989859393034"
+                            android:textColor="@color/colorOrderNum"
+                            android:textSize="@dimen/sp_twelve" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_eight"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/orderdown_time" />
+
+                        <TextView
+                            android:id="@+id/oLOrderTime_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:text="2016-05-12 11:49"
+                            android:textSize="@dimen/sp_thirteen" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/olLocate_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_nine"
+                        android:layout_marginTop="@dimen/dp_eight"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/orderLocate_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/orderdown_locate" />
+
+                        <TextView
+                            android:id="@+id/oLLocate_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="ICON·大源国际中心"
+                            android:textSize="@dimen/sp_thirteen" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/olReservationDate_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_nine"
+                        android:layout_marginTop="@dimen/dp_eight"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/reservation_date" />
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:text="@string/orderTripTime" />
+
+                        <TextView
+                            android:id="@+id/oLReservationDate_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="2016-11-12"
+                            android:textSize="@dimen/sp_thirteen" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

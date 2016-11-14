@@ -1,0 +1,58 @@
+<resources>
+    <!--正常的字体,14sp-->
+    <style name="txtBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBTxt</item>
+        <item name="android:textSize">@dimen/sp_fourteen</item>
+    </style>
+    <!--正常的提示字体,14sp-->
+    <style name="txtHint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBTxt</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:background">@color/colorTrans</item>
+        <item name="android:textSize">@dimen/sp_fourteen</item>
+    </style>
+    <!--提示的提示字体,14sp-->
+    <style name="txtGray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorHint</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textSize">@dimen/sp_fourteen</item>
+    </style>
+    <!--按钮-->
+    <style name="myBtnStyle" parent="@android:style/Widget.Holo.Light.Button.Borderless.Small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_forty_eight</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/theme_rectangle_bg</item>
+        <item name="android:textSize">@dimen/sp_sixteen</item>
+    </style>
+    <!--布局中线条-->
+    <style name="viewLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_zero_five</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+    <!--星级中-->
+    <style name="roomRatingBar_middle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/middle_ratingbar</item>
+        <item name="android:minHeight">@dimen/dp_ten</item>
+        <item name="android:maxHeight">@dimen/dp_ten</item>
+    </style>
+    <!--星级大-->
+    <style name="roomRatingBar_big" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/big_ratingbar</item>
+        <item name="android:minHeight">@dimen/dp_thirty_four</item>
+        <item name="android:maxHeight">@dimen/dp_thirty_four</item>
+    </style>
+    <!--导游星级-->
+    <style name="guideRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/guide_ratingbar</item>
+        <item name="android:minHeight">@dimen/dp_twelve</item>
+        <item name="android:maxHeight">@dimen/dp_twelve</item>
+    </style>
+</resources>

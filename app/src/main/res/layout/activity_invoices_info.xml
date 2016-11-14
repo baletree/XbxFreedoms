@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/page_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/invoiceCompany" />
+
+                    <EditText
+                        android:id="@+id/invoicesCompanyEt"
+                        style="@style/txtHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_twelve"
+                        android:gravity="center_vertical|right"
+                        android:hint="@string/invoiceCompanyHint"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:text="@string/invoiceMsg" />
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/invoiceMsgHint" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_centerVertical="true"
+                        android:text="@string/invoiceMoney" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/invoicesMonTv"
+                            style="@style/txtBlack"
+                            android:text=""
+                            android:textColor="@color/themeColor" />
+
+                        <TextView
+                            style="@style/txtBlack"
+                            android:text="@string/appYuanC" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twelve"
+                android:background="@drawable/border_topbottom_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/invoiceGive" />
+
+                    <EditText
+                        android:id="@+id/invoicesNameEt"
+                        style="@style/txtHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_twelve"
+                        android:gravity="center_vertical|right"
+                        android:hint="@string/invoiceGiveHint"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_five"
+                    android:background="@color/colorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty_five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txtBlack"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/invoicePhone" />
+
+                    <EditText
+                        android:id="@+id/invoicesPhoneEt"
+                        style="@style/txtHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_twelve"
+                        android:gravity="center_vertical|right"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/txtBlack"
+                android:layout_height="@dimen/dp_forty_five"
+                android:layout_marginLeft="@dimen/dp_sixteen"
+                android:gravity="center_vertical"
+                android:text="@string/invoiceAddr" />
+
+            <EditText
+                android:id="@+id/invoiceAddressEt"
+                style="@style/txtHint"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sixty"
+                android:background="@drawable/border_input_bg"
+                android:gravity="top"
+                android:hint="@string/invoiceAddressHint"
+                android:maxLength="55"
+                android:paddingBottom="@dimen/dp_five"
+                android:paddingLeft="@dimen/dp_sixteen"
+                android:paddingRight="@dimen/dp_sixteen"
+                android:paddingTop="@dimen/dp_five" />
+
+            <Button
+                android:id="@+id/invoiceSubmitBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty_eight"
+                android:layout_margin="@dimen/dp_sixteen"
+                android:background="@drawable/theme_rectangle_bg"
+                android:text="@string/invoiceSubmit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_sixteen" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

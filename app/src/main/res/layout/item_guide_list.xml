@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_topbottom_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_ninety"
+        android:paddingLeft="@dimen/dp_sixteen"
+        android:paddingRight="@dimen/dp_sixteen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_sixty_four"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/item_guideHead_img"
+                    android:layout_width="@dimen/dp_sixty_four"
+                    android:layout_height="@dimen/dp_sixty_four"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/head_default"
+                    app:riv_oval="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item_guideName_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:text="张晓峰"
+                            android:textSize="@dimen/sp_fifteen" />
+
+                        <ImageView
+                            android:id="@+id/item_guideSex_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:src="@mipmap/icon_nv" />
+
+                        <TextView
+                            android:id="@+id/item_guideLanguage_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:text="普通话"
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_twelve" />
+                        <View
+                            android:layout_width="@dimen/dp_zero_five"
+                            android:layout_height="@dimen/dp_twelve"
+                            android:background="@color/colorHint"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"/>
+                        <TextView
+                            android:id="@+id/item_guideAge_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:text=""
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_twelve" />
+                        <View
+                            android:layout_width="@dimen/dp_zero_five"
+                            android:layout_height="@dimen/dp_twelve"
+                            android:background="@color/colorHint"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"/>
+                        <TextView
+                            android:id="@+id/item_guideJobAge_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:text=""
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_twelve" />
+                    </LinearLayout>
+                    <RatingBar
+                        android:id="@+id/item_guideStar_rtb"
+                        style="@style/guideRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:isIndicator="true"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:numStars="5"
+                        android:rating="1.9" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/guideCard"
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_twelve" />
+                        <TextView
+                            android:id="@+id/item_gCardNum_tv"
+                            style="@style/txtBlack"
+                            android:layout_gravity="center_vertical"
+                            android:text="457***87"
+                            android:layout_marginLeft="@dimen/dp_six"
+                            android:textColor="@color/colorHint"
+                            android:textSize="@dimen/sp_twelve" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/item_gServiceFee_tv"
+                    style="@style/txtBlack"
+                    android:text="￥500"
+                    android:textColor="@color/ff8Color"
+                    android:textSize="@dimen/sp_fourteen" />
+                <TextView
+                    style="@style/txtBlack"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/guidePerDay"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/sp_fourteen" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payWays"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/payAlipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty"
+        android:background="@null"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@mipmap/alipay_img"
+        android:drawablePadding="@dimen/dp_twelve"
+        android:drawableRight="@drawable/pay_checked"
+        android:text="@string/oDetailAlipay"
+        android:textColor="@color/colorBTxt"
+        android:textSize="@dimen/sp_twelve" />
+
+    <RadioButton
+        android:id="@+id/payWx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty"
+        android:background="@null"
+        android:button="@null"
+        android:drawableLeft="@mipmap/wx_pay"
+        android:drawablePadding="@dimen/dp_twelve"
+        android:drawableRight="@drawable/pay_checked"
+        android:text="@string/oDetailWxPay"
+        android:textColor="@color/colorBTxt"
+        android:textSize="@dimen/sp_twelve" />
+
+</RadioGroup>
